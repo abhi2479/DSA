@@ -19,5 +19,6 @@ Explanation: The square root of 8 is 2.82842..., and since we round it down to t
 
 Constraints:
 
-0 <= x <= 231 - 1 */
+0 <= x <= 231 - 1 
+*/
 
