@@ -1,1 +1,2 @@
-# Leet Code Qs
+Leet Code Questions
+
