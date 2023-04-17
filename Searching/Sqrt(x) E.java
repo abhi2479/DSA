@@ -20,5 +20,33 @@ Explanation: The square root of 8 is 2.82842..., and since we round it down to t
 Constraints:
 
 0 <= x <= 231 - 1 
+
 */
 
+
+class Solution {
+    public int mySqrt(int n) {
+        if(n==0)
+            return 0;
+        int start=1,end=n,mid,ans,res=1,temp;
+        while(start<=end)
+        {
+            mid=start + (end-start)/2;
+            
+            if(mid<=n/mid && ((mid+1)>n/(mid+1)))
+            {
+                res=mid;
+                break;
+            }
+            
+            if(mid<n/mid)
+                start=mid+1;
+            else
+                end=mid;
+            
+            
+        }
+        
+        return res;
+    }
+}
