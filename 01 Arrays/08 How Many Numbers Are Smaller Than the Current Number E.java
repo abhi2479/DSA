@@ -39,11 +39,6 @@ Constraints:
         int min=nums[0],count=0,i,j;
         int n=nums.length;
         int[] ans=new int[n];
-        // for(i=1;i<n;i++)
-        // {
-            // if(min>nums[i])
-                // min=nums[i];
-        // }
 
         for(i=0;i<n;i++)
         {

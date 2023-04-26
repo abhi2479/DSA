@@ -39,7 +39,7 @@ Sample Output 1
 
 0
 
-Scored : 50
+
 */
 		
 		int i=0,j=arr.size()-1,k=0,sum=0,diff=Integer.MAX_VALUE;

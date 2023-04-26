@@ -61,3 +61,74 @@ class Solution {
         return -1;
     }
 }
+
+//max product subarray
+// #DP
+
+class Solution {
+    public int maxProduct(int[] nums) {
+        int cmin=1,cmax=1,res=Integer.MIN_VALUE,temp=1;
+
+        for(int i=0;i<nums.length;i++)
+        {
+            if(res<nums[i])
+                res=nums[i];
+        }
+
+        for(int n:nums)
+        {
+            temp=cmax*n;
+            cmax=Math.max(Math.max(n*cmax,n*cmin),n);
+            cmin=Math.min(Math.min(temp,n*cmin),n);
+
+            res=Math.max(res,cmax);
+        }
+
+        return res;
+    }
+}
+
+//sum of numbers smaller than self
+public long[] smallerSum(int n,int arr[])
+    {
+        int[] ar=arr.clone();
+        long sum=0;
+        long[] arSum=new long[n];
+        long[] ans= new long[n];
+
+        Arrays.sort(ar);
+        for(int i=0;i<n;i++)
+        {
+            arSum[i]=sum;
+            sum+=ar[i];
+        }
+
+        for(int i=0;i<n;i++)
+        {
+            int index=bs(ar,arr[i]);
+            ans[i]=arSum[index];
+        }
+
+        return ans;
+
+    }
+
+    public int bs(int[] arr,int target)
+    {
+        int s=0,e=arr.length-1,mid;
+        while(s<=e)
+        {
+            mid=(e-s)/2+s;
+            if(target<=arr[mid])
+                e=mid-1;
+            else
+                s=mid+1;
+        }
+
+        return s;
+    }
+	
+	
+
+
+

@@ -29,7 +29,7 @@ n == mat[i].length
 1 <= matrix[i][j] <= 105.
 All elements in the matrix are distinct. */
 
-/*
+
 public List<Integer> luckyNumbers (int[][] matrix) {
     int small, big;
     List<Integer> list = new ArrayList<Integer>();
@@ -112,4 +112,4 @@ public List<Integer> luckyNumbers (int[][] matrix) {
      
     }
 
- */
+ 

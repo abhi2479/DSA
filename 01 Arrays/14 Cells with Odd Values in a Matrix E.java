@@ -34,7 +34,7 @@ Constraints:
 
 Follow up: Could you solve this in O(n + m + indices.length) time with only O(n + m) extra space? */
 
-/*
+
 class Solution {
     public int oddCells(int m, int n, int[][] indices) {
         int[][] arr=new int[m][n];
@@ -88,4 +88,4 @@ class Solution {
     }
 }
 
- */
+ 
