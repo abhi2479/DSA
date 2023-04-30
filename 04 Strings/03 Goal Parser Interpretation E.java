@@ -6,7 +6,7 @@ Given the string command, return the Goal Parser's interpretation of command.
 
 Example 1:
 
-Input: command = "G()(al)"
+Input: command = "G()(al)" 
 Output: "Goal"
 Explanation: The Goal Parser interprets the command as follows:
 G -> G

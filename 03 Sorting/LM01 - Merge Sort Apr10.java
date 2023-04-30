@@ -3,7 +3,7 @@
 Input Format
 
 First line is the length of the array
-Next line is the elements of the array
+Next line is the elements of the array 
 
 Constraints
 

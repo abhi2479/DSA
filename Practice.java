@@ -133,7 +133,7 @@ public long[] smallerSum(int n,int arr[])
 
 rowS=0,rowE=mat.length-1,colS=0,colE=mat[0]-1.length
 
-List<Integer> res=new ArrayList<>();
+List<Integer> res=new ArrayList<>(); 
 while(rowS<=rowE && colS<=colE)
 switch(dir){
 case0:
