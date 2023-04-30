@@ -63,7 +63,7 @@ Here what we did is..
 		
 		// iterating from start as well as from last
         while (i2 <= j2) {
-            if (arr1[i1].equals(arr2[i1])) {
+            if (arr1[i1].equals(arr2[i2])) {
                 i1++; 
                 i2++;
             } else if (arr1[j1].equals(arr2[j2])) {

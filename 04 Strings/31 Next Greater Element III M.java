@@ -12,11 +12,16 @@ Example 2:
 
 Input: n = 21
 Output: -1
+
+Input: n = 5698732
+Output : 5723689
  
 
 Constraints:
 
 1 <= n <= 231 - 1 */
+
+//https://leetcode.com/problems/next-greater-element-iii/solutions/2597736/0ms-java-solution-100-with-explanation/?orderBy=most_votes&languageTags=java
 
 class Solution {
     public int nextGreaterElement(int n) {

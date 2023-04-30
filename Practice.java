@@ -129,6 +129,47 @@ public long[] smallerSum(int n,int arr[])
     }
 	
 	
+//spiral matrix
+
+rowS=0,rowE=mat.length-1,colS=0,colE=mat[0]-1.length
+
+List<Integer> res=new ArrayList<>();
+while(rowS<=rowE && colS<=colE)
+switch(dir){
+case0:
+for(i=colS;i<=colE;i++)
+	res.add(mat[rowS][i])
+
+rowS++;
+break;
+
+case1:
+for(i=rowS;i<=rowE;i++)
+	res.add(mat[i][colE])
+
+ColE--;
+break;
+
+case2:
+for(i=colE;i>=colS;i--)
+	res.add(mat[rowE][i])
+
+rowE--;
+break;
+case3:
+for(i=rowE;i>=rowS;i--)
+	res.add(mat[i][colS])
+
+colS++;
+break;
+
+}
+dir=(dir+1)%4;
+}
+
+
+
+
 
 
 
