@@ -167,7 +167,23 @@ break;
 dir=(dir+1)%4;
 }
 
+//
 
+
+
+//User function Template for Java
+
+/* 
+class Node{
+    int data;
+    Node next;
+    
+    Node(int x){
+        data = x;
+        next = null;
+    }
+}
+*/
 
 
 
